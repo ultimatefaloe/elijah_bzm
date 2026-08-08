@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML List</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: black;
+      }
+      div h1 {
+        color: white;
+      }
+      nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 5px;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+      }
+      .lp-article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>LOGO</h1>
+      </div>
+
+      <!-- navogation -->
+      <nav>
+        <!-- creating an unordered list -->
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- using unordered list -->
+    <section>
+      <h2>Best Laptop for developer</h2>
+      <div class="lp-article">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          harum ex provident beatae? Aut officiis hic saepe, consequatur,
+          tenetur earum voluptate impedit sapiente, explicabo in dolores dolor
+          exercitationem. Recusandae, temporibus.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+          asperiores, saepe provident iusto earum, assumenda, quis magnam eaque
+          odio velit soluta ut accusamus consectetur veritatis praesentium quasi
+          aliquid. Voluptatem, hic.
+        </p>
+      </div>
+      <ul>
+        <li>Macbook M2</li>
+        <li>Macbook M3</li>
+        <li>Macbook M4</li>
+        <li>Dell I7</li>
+      </ul>
+    </section>
+
+    <!-- using ordered list -->
+    <section>
+      <h2>Daily Routines</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde est
+        numquam maiores, tempore excepturi harum inventore nesciunt magnam sunt?
+        Consequatur pariatur velit exercitationem id accusamus dignissimos nisi!
+        Incidunt, optio ad!
+      </p>
+      <p>
+        <b>My Daily Routines</b>
+      </p>
+      <ol>
+        <li>Wake up</li>
+        <li>Pray</li>
+        <li>Brush </li>
+        <li>Breakfast
+          <ol style="list-style: lower-alpha;">
+            <li>Get floor</li>
+            <li>Baking powder</li>
+            <li>sugar</li>
+            <li>eggs</li>
+            <li>milk</li>
+            <li>oil</li>
+          </ol>
+        </li>
+        <li>Going to work</li>
+      </ol>
+    </section>
+
+    <!-- using definition list -->
+     <section>
+      <h2>Introduction to web development programme</h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading StyleSheet</dd>
+      </dl>
+     </section>
+  </body>
+</html>
