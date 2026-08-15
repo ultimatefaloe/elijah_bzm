@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML form</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>LOGO</h1>
+      </div>
+
+      <!-- navogation -->
+      <nav>
+        <!-- creating an unordered list -->
+        <ul>
+          <li><a href="../class1/index.html">Home</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Student Bio Names</legend>
+          <div>
+            <div class="">
+              <label for="fname">First Name:</label>
+            </div>
+            <div class="">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="John"
+                value=""
+                minlength="3"
+                maxlength="10"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <div class="">
+              <label for="lname">Last Name:</label>
+            </div>
+            <div class="">
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Doe"
+                value=""
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <div class="">
+              <label for="mname">MiddleName:</label>
+            </div>
+            <div class="">
+              <input
+                type="text"
+                name="mname"
+                id="mname"
+                placeholder="Timi (optional)"
+                value=""
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <div>
+          <div class="">
+            <label for="email">Email:</label>
+          </div>
+          <div class="">
+            <input type="email" name="email" id="email" required />
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="phone">Phone:</label>
+          </div>
+          <div class="">
+            <input type="tel" name="phone" id="phone" value="+234" required />
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="age">Age:</label>
+          </div>
+          <div class="">
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="18"
+              max="70"
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="password">Password:</label>
+          </div>
+          <div class="">
+            <input type="password" name="password" id="password" required />
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="date">Date Of Birth:</label>
+          </div>
+          <div class="">
+            <input type="date" name="date" id="date" required />
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="soo">State of Origin:</label>
+          </div>
+          <div class="">
+            <select name="soo" id="soo">
+              <option value="__empty__ ">Select State of origin</option>
+              <option value="oyo">Oyo</option>
+              <option value="abuja">Abuja</option>
+              <option value="niger">Niger</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <input type="checkbox" name="agt" id="agt" />
+            <label for="agt"
+              >Agree to terms and conditions of our services</label
+            >
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="perferendis">Pin:</label>
+          </div>
+          <div class="">
+            <input
+              type="text"
+              name="pin"
+              id="pin"
+              pattern="[0-9]{4}"
+              required
+            />
+          </div>
+        </div>
+
+
+        <div class="">
+
+          <div class="">
+            <label for="gender">Gender:</label>
+          </div>
+          <div class="">
+            <input type="radio" name="gender" id="gender" value="male"> 
+            <label for="gender">male</label>
+            <input type="radio" name="gender" id="gender" value="female">
+            <label for="gender">female</label>
+            
+            <input type="radio" name="gender" id="gender" value="unknown">
+            <label for="gender">i dont know</label>
+
+          </div>
+        </div>
+        <div class="">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

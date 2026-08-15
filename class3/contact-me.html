@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML form</title>
+    <style>
+      .highlight {
+        color: red;
+      }
+      .job-title {
+        font-weight: bold;
+        background-color: aqua;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>LOGO</h1>
+      </div>
+
+      <!-- navogation -->
+      <nav>
+        <!-- creating an unordered list -->
+        <ul>
+          <li><a href="../class1/index.html">Home</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        My name is <span class="highlight">Amaka</span> and I am a
+        <span class="job-title">Front-End Developer</span>.
+      </p>
+
+      <form action="" method="get">
+        <div>
+          <div class="">
+            <label for="fullname">Full Name:</label>
+          </div>
+          <div class="">
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Enter your name..."
+              value=""
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <div class="">
+            <label for="email">Email:</label>
+          </div>
+          <div class="">
+            <input
+              type="email"
+              name="email"
+              id="eamil"
+              placeholder="Enter your email..."
+              value=""
+              required
+            />
+          </div>
+        </div>
+
+        <div class="">
+          <div class="">
+            <label for="message">Message:</label>
+          </div>
+          <div class="">
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              cols="100"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
