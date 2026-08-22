@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Intro</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 50px;
+        background: linear-gradient(to right, rgb(115, 208, 255), skyblue);
+        /* opacity: 100%; */
+      }
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 style="color: blue; padding: 10px">LOGO</h1>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="./home">Home</a>
+          </li>
+          <li>
+            <a href="#">Project</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <!-- hero section -->
+      <section class="hero">
+        <div>
+          <h1>Welcome to Elijah Portfolio</h1>
+          <p>He loves to code and design</p>
+        </div>
+        <div>
+          <img src="../images/code.png" alt="" />
+        </div>
+      </section>
+
+      <!-- post article section with cahrd ui -->
+      <section class="card-grid">
+        <article>
+          <div class="article-img">
+            <img src="../images/lewis.jpeg" alt="F1 driver" />
+          </div>
+          <div class="article-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              asperiores itaque dicta amet soluta tenetur pariatur sint
+              voluptate, ipsam saepe perspiciatis laboriosam sequi rerum,
+              voluptates accusamus provident molestias laborum. Iure.
+            </p>
+            <div class="article-cta">
+              <button class="btn btn-primary">View more</button>
+              <button class="btn btn-secondary">Like content</button>
+            </div>
+          </div>
+        </article>
+         <article>
+          <div class="article-img">
+            <img src="../images/lewis.jpeg" alt="F1 driver" />
+          </div>
+          <div class="article-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              asperiores itaque dicta amet soluta tenetur pariatur sint
+              voluptate, ipsam saepe perspiciatis laboriosam sequi rerum,
+              voluptates accusamus provident molestias laborum. Iure.
+            </p>
+            <div class="article-cta">
+              <button class="btn btn-primary">View more</button>
+              <button class="btn btn-secondary">Like content</button>
+            </div>
+          </div>
+        </article>
+         <article>
+          <div class="article-img">
+            <img src="../images/lewis.jpeg" alt="F1 driver" />
+          </div>
+          <div class="article-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              asperiores itaque dicta amet soluta tenetur pariatur sint
+              voluptate, ipsam saepe perspiciatis laboriosam sequi rerum,
+              voluptates accusamus provident molestias laborum. Iure.
+            </p>
+            <div class="article-cta">
+              <button class="btn btn-primary">View more</button>
+              <button class="btn btn-secondary">Like content</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Paragraph section -->
+      <section>
+        <p id="para" class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nisi, quos
+          eius consequatur repellat iure accusamus expedita non porro veniam
+          ullam error temporibus eum neque vitae rem at perspiciatis placeat.
+        </p>
+        <p class="paragraph color font">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla amet
+          adipisci autem quo recusandae fugiat at, optio rem illum totam nemo
+          minus voluptatum placeat sit tempore in itaque nesciunt quibusdam.
+        </p>
+      </section>
+
+      <!-- conatct section -->
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="John@email.com"
+            />
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message..."
+            ></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <img src="../images/coding.png" alt="" width="100px" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Term and Condition</a></li>
+          <li><a href="">Policy</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
