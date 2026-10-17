@@ -26,8 +26,10 @@ header {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
+  z-index: 999px;
   border-bottom: 1px solid var(--color-primary);
   box-shadow: var(--shadow);
+  background-color: var(--color-dark);
 }
 .main-nav {
   display: flex;
@@ -91,3 +93,100 @@ nav ul li a:hover::after {
   margin: 0 auto;
   padding: 2rem;
 }
+
+
+/* footer styles */
+footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--color-footer-bg);
+  color: var(--color-muted);
+  text-align: center;
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+footer div p{
+  font-size: 1.4rem;
+  color: var(--color-text);
+}
+footer div ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 1rem;
+}
+footer div ul li a{
+  text-decoration: none;
+  color: var(--color-muted);
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+footer div ul li a:hover{
+  color: var(--color-primary);
+}
+
+
+
+/* button style */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  outline: none;
+  border: 2px solid var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text);
+  transform: translateY(-2px);
+}
+.btn-secondary{
+  background-color: var(--color-dark);
+  color: var(--color-primary);
+}
+.btn-secondary:hover{
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.btn-ghost{
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary)
+}
+.btn-ghost:hover{
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.btn-rounded-full{
+  border-radius: var(--rounded-full);
+}
+
+
+/* Title header */
+.title {
+  font-size: 3rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+.title::after {
+  content: "";
+  width: 30%;
+  height: 3px;
+  background-color: var(--color-primary);
+  display: block;
+  margin-top: 1.5rem;
+  border-radius: var(--rounded-full);
+  transition: var(--transition);
+}
+

@@ -10,22 +10,6 @@
   margin-bottom: 3rem;
 }
 
-.contact-header h1 {
-  font-size: 3rem;
-  color: var(--color-text);
-  margin-bottom: 2rem;
-}
-.contact-header h1::after {
-  content: "";
-  width: 25%;
-  height: 3px;
-  background-color: var(--color-primary);
-  display: block;
-  margin-top: 5px;
-  border-radius: var(--rounded-full);
-  transition: var(--transition);
-}
-
 .contact-header p {
   color: var(--color-muted);
   font-size: 1.2rem;
